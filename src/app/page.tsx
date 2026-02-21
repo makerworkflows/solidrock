@@ -102,18 +102,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ROI Calculator Section */}
-      <section id="roi" className="py-32 px-6 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20 space-y-4">
-            <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black tracking-tight text-[#001745]">Data-Driven Execution. <br/><span className="text-slate-400">Not Just Theory.</span></h2>
-            <p className="text-slate-600 max-w-2xl mx-auto text-lg">Input your operational metrics below to estimate the annual financial recovery potential of a Lean Six Sigma implementation.</p>
-          </div>
-          
-          <ROICalculator />
-        </div>
-      </section>
-
       {/* Services Framework */}
       <section id="services" className="py-32 px-6 bg-[#001745]">
         <div className="max-w-7xl mx-auto">
@@ -140,6 +128,18 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ROI Calculator Section */}
+      <section id="roi" className="py-32 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20 space-y-4">
+            <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black tracking-tight text-[#001745]">Data-Driven Execution. <br/><span className="text-slate-400">Not Just Theory.</span></h2>
+            <p className="text-slate-600 max-w-2xl mx-auto text-lg">Input your operational metrics below to estimate the annual financial recovery potential of a Lean Six Sigma implementation.</p>
+          </div>
+          
+          <ROICalculator />
         </div>
       </section>
 
