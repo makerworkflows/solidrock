@@ -16,10 +16,10 @@ export default function Home() {
             <a href="#roi" className="hover:text-[#001745] transition-colors">ROI CALCULATOR</a>
           </div>
           <div className="flex items-center gap-4">
-            <a href="#services" className="text-[#001745] px-4 py-2 text-sm font-bold tracking-wide hover:underline transition-all">
+            <a href="#services" className="bg-[#B6D4FF] text-[#001745] px-6 py-3 rounded-md text-sm font-bold tracking-wide hover:bg-[#a6c7f5] transition-colors">
               Book A Call
             </a>
-            <a href="#roi" className="bg-[#B6D4FF] text-[#001745] px-6 py-3 rounded-md text-sm font-bold tracking-wide hover:bg-[#a6c7f5] transition-colors">
+            <a href="#roi" className="bg-[#001745] text-white px-6 py-3 rounded-md text-sm font-bold tracking-wide hover:bg-[#001033] shadow-md transition-all">
               Get Started — $3,500
             </a>
           </div>
