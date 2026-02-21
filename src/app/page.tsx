@@ -49,33 +49,35 @@ export default function Home() {
       <section className="relative pt-48 pb-40 px-6 overflow-hidden bg-cover bg-center" style={{ backgroundImage: "url('/solidrock/hero-bg-light.png')" }}>
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
         
-        <div className="max-w-5xl mx-auto space-y-8 relative z-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-white/20 bg-black/40 text-white text-sm font-bold tracking-widest uppercase mb-4">
-            <Globe2 className="w-4 h-4 text-[#B6D4FF]" /> 
-            <span>{lang === 'EN' ? 'Bilingual RGV-Mexico Cross-Border Consulting' : 'Consultoría Transfronteriza Bilingüe RGV-México'}</span>
-          </div>
-          
-          <h1 className="text-5xl md:text-[64px] font-black tracking-tighter text-white leading-[1.05]">
-            {lang === 'EN' ? (
-              <>Operational Excellence <br />Constructed Daily.</>
-            ) : (
-              <>Excelencia Operativa <br />Construida Diariamente.</>
-            )}
-          </h1>
-          
-          <p className="text-xl text-slate-200 max-w-2xl leading-relaxed font-medium">
-            {lang === 'EN' 
-              ? 'The defining operational excellence firm for the Rio Grande Valley. Led by Ricardo D. Luis, Black Belt III. We turn process friction into quantifiable ROI.'
-              : 'La firma líder en excelencia operativa del Valle del Río Grande. Dirigida por Ricardo D. Luis, Black Belt III. Convertimos la fricción en ROI cuantificable.'}
-          </p>
+        <div className="max-w-5xl mx-auto relative z-10 min-h-[550px] sm:min-h-[480px] md:min-h-[380px] flex flex-col justify-center">
+          <div className="space-y-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-white/20 bg-black/40 text-white text-sm font-bold tracking-widest uppercase mb-4">
+              <Globe2 className="w-4 h-4 text-[#B6D4FF]" /> 
+              <span>{lang === 'EN' ? 'Bilingual RGV-Mexico Cross-Border Consulting' : 'Consultoría Transfronteriza Bilingüe RGV-México'}</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-[64px] font-black tracking-tighter text-white leading-[1.05]">
+              {lang === 'EN' ? (
+                <>Operational Excellence <br className="hidden sm:block" />Constructed Daily.</>
+              ) : (
+                <>Excelencia Operativa <br className="hidden sm:block" />Construida Diariamente.</>
+              )}
+            </h1>
+            
+            <p className="text-xl text-slate-200 max-w-2xl leading-relaxed font-medium">
+              {lang === 'EN' 
+                ? 'The defining operational excellence firm for the Rio Grande Valley. Led by Ricardo D. Luis, Black Belt III. We turn process friction into quantifiable ROI.'
+                : 'La firma líder en excelencia operativa del Valle del Río Grande. Dirigida por Ricardo D. Luis, Black Belt III. Convertimos la fricción en ROI cuantificable.'}
+            </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-4 pt-8">
-            <a href="#roi" className="w-full sm:w-auto px-10 py-5 rounded-lg bg-[#001745] hover:bg-[#001033] text-white text-lg font-bold flex items-center justify-center gap-2 transition-all shadow-2xl">
-              {lang === 'EN' ? 'Get Started — $3,500' : 'Comenzar — $3,500'} <ArrowRight className="w-5 h-5" />
-            </a>
-            <a href="#services" className="w-full sm:w-auto px-10 py-5 rounded-lg bg-[#B6D4FF] hover:bg-[#a6c7f5] text-[#001745] text-lg font-bold transition-all flex items-center justify-center gap-2 shadow-2xl">
-              {lang === 'EN' ? 'Book A Call' : 'Agendar Llamada'}
-            </a>
+            <div className="flex flex-col sm:flex-row items-center gap-4 pt-8">
+              <a href="#roi" className="w-full sm:w-auto px-10 py-5 rounded-lg bg-[#001745] hover:bg-[#001033] text-white text-lg font-bold flex items-center justify-center gap-2 transition-all shadow-2xl">
+                {lang === 'EN' ? 'Get Started — $3,500' : 'Comenzar — $3,500'} <ArrowRight className="w-5 h-5" />
+              </a>
+              <a href="#services" className="w-full sm:w-auto px-10 py-5 rounded-lg bg-[#B6D4FF] hover:bg-[#a6c7f5] text-[#001745] text-lg font-bold transition-all flex items-center justify-center gap-2 shadow-2xl">
+                {lang === 'EN' ? 'Book A Call' : 'Agendar Llamada'}
+              </a>
+            </div>
           </div>
         </div>
       </section>
