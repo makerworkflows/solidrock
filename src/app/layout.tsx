@@ -10,7 +10,23 @@ const nunito = Nunito_Sans({
 
 export const metadata: Metadata = {
   title: "Solid Rock Lean Six Sigma | The Cross-Border Operational Excellence Firm",
-  description: "Rio Grande Valley & Mexico manufacturing operational excellence, Lean Six Sigma consulting, and continuous improvement by Ricardo D. Luis, Black Belt III.",
+  description: "Bilingual Lean Six Sigma consulting & operational excellence firm for the RGV and Mexico. We turn process friction into quantifiable ROI.",
+  openGraph: {
+    title: "Solid Rock Lean Six Sigma",
+    description: "Bilingual Lean Six Sigma consulting & operational excellence firm for the RGV and Mexico.",
+    url: "https://makerworkflows.github.io/solidrock/",
+    siteName: "Solid Rock",
+    images: [
+      {
+        url: "https://makerworkflows.github.io/solidrock/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Solid Rock Lean Six Sigma Logo",
+      }
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
