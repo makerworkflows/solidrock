@@ -15,9 +15,14 @@ export default function Home() {
             <a href="#services" className="hover:text-[#001745] transition-colors">FRAMEWORK</a>
             <a href="#roi" className="hover:text-[#001745] transition-colors">ROI CALCULATOR</a>
           </div>
-          <a href="#roi" className="bg-[#B6D4FF] text-[#001745] px-6 py-3 rounded-md text-sm font-bold tracking-wide hover:bg-[#a6c7f5] transition-colors">
-            Calculate Savings
-          </a>
+          <div className="flex items-center gap-4">
+            <a href="#services" className="text-[#001745] px-4 py-2 text-sm font-bold tracking-wide hover:underline transition-all">
+              Book A Call
+            </a>
+            <a href="#roi" className="bg-[#B6D4FF] text-[#001745] px-6 py-3 rounded-md text-sm font-bold tracking-wide hover:bg-[#a6c7f5] transition-colors">
+              Get Started — $3,500
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -42,10 +47,10 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-8">
             <a href="#roi" className="w-full sm:w-auto px-10 py-5 rounded-lg bg-[#001745] hover:bg-[#001033] text-white text-lg font-bold flex items-center justify-center gap-2 transition-all shadow-2xl">
-              Calculate Your ROI <ArrowRight className="w-5 h-5" />
+              Get Started — $3,500 <ArrowRight className="w-5 h-5" />
             </a>
             <a href="#services" className="w-full sm:w-auto px-10 py-5 rounded-lg bg-[#B6D4FF] hover:bg-[#a6c7f5] text-[#001745] text-lg font-bold transition-all flex items-center justify-center gap-2 shadow-2xl">
-              Explore Our Framework
+              Book A Call
             </a>
           </div>
         </div>
