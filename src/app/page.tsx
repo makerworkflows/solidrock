@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import ROICalculator from "@/components/ROICalculator";
-import { ArrowRight, BarChart3, Globe2, ShieldCheck, ChevronRight } from "lucide-react";
+import { ArrowRight, BarChart3, Globe2, ShieldCheck, ChevronRight, Linkedin } from "lucide-react";
 
 export default function Home() {
   const [lang, setLang] = useState<'EN' | 'ES'>('EN');
@@ -210,10 +210,21 @@ export default function Home() {
           <div className="flex items-center">
             <img src="/solidrock/logo.png" alt="Solid Rock Logo" className="h-[56px] w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
           </div>
-          <p className="text-[#B6D4FF] text-sm text-center md:text-right font-medium leading-relaxed">
-            © {new Date().getFullYear()} Solid Rock Lean Six Sigma. Edinburg, Texas.<br />
-            {lang === 'EN' ? 'Built for the Rio Grande Valley & Mexico Manufacturing Sector.' : 'Desarrollado para el sector manufacturero del Valle del Río Grande y México.'}
-          </p>
+          <div className="flex flex-col items-center md:items-end gap-4">
+            <p className="text-[#B6D4FF] text-sm text-center md:text-right font-medium leading-relaxed">
+              © {new Date().getFullYear()} Solid Rock Lean Six Sigma. Edinburg, Texas.<br />
+              {lang === 'EN' ? 'Built for the Rio Grande Valley & Mexico Manufacturing Sector.' : 'Desarrollado para el sector manufacturero del Valle del Río Grande y México.'}
+            </p>
+            <a 
+              href="https://www.linkedin.com/company/solid-rock-lean-six-sigma/posts/?feedView=all"
+              target="_blank"
+              rel="noopener noreferrer" 
+              className="text-[#B6D4FF] hover:text-white transition-colors bg-[#B6D4FF]/10 p-2.5 rounded-full hover:bg-[#B6D4FF]/20 mt-2"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-5 h-5 fill-current" />
+            </a>
+          </div>
         </div>
       </footer>
     </main>
