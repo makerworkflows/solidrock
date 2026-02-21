@@ -7,8 +7,8 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/95 border-b border-slate-100 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-[#001745] text-white font-black flex items-center justify-center rounded-sm text-lg">S</div>
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="Solid Rock Logo" className="h-10 w-auto" />
             <span className="font-bold text-xl tracking-tight text-[#001745]">SOLID ROCK</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-bold text-slate-500">
@@ -142,8 +142,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-16 px-6 bg-[#001033]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-white text-[#001745] font-black flex items-center justify-center rounded-sm text-lg">S</div>
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="Solid Rock Logo" className="h-8 w-auto brightness-0 invert" />
             <span className="font-bold text-xl tracking-tight text-white">SOLID ROCK</span>
           </div>
           <p className="text-[#B6D4FF] text-sm text-center md:text-right font-medium leading-relaxed">
