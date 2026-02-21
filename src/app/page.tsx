@@ -12,8 +12,8 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-bold text-slate-500">
             <a href="#expertise" className="hover:text-[#001745] transition-colors">EXPERTISE</a>
-            <a href="#roi" className="hover:text-[#001745] transition-colors">ROI CALCULATOR</a>
             <a href="#services" className="hover:text-[#001745] transition-colors">FRAMEWORK</a>
+            <a href="#roi" className="hover:text-[#001745] transition-colors">ROI CALCULATOR</a>
           </div>
           <a href="#roi" className="bg-[#B6D4FF] text-[#001745] px-6 py-3 rounded-md text-sm font-bold tracking-wide hover:bg-[#a6c7f5] transition-colors">
             Calculate Savings
